@@ -14,6 +14,7 @@
 		FA3DBA512B688BDA00449514 /* Murphy_Icebreaker_S24Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3DBA502B688BDA00449514 /* Murphy_Icebreaker_S24Tests.swift */; };
 		FA3DBA5B2B688BDA00449514 /* Murphy_Icebreaker_S24UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3DBA5A2B688BDA00449514 /* Murphy_Icebreaker_S24UITests.swift */; };
 		FA3DBA5D2B688BDA00449514 /* Murphy_Icebreaker_S24UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3DBA5C2B688BDA00449514 /* Murphy_Icebreaker_S24UITestsLaunchTests.swift */; };
+		FA5039C32B730F4500212C91 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5039C22B730F4500212C91 /* Question.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		FA3DBA562B688BDA00449514 /* Murphy-Icebreaker-S24UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Murphy-Icebreaker-S24UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA3DBA5A2B688BDA00449514 /* Murphy_Icebreaker_S24UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Murphy_Icebreaker_S24UITests.swift; sourceTree = "<group>"; };
 		FA3DBA5C2B688BDA00449514 /* Murphy_Icebreaker_S24UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Murphy_Icebreaker_S24UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FA5039C22B730F4500212C91 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 				FA3DBA412B688BD900449514 /* ContentView.swift */,
 				FA3DBA432B688BDA00449514 /* Assets.xcassets */,
 				FA3DBA452B688BDA00449514 /* Preview Content */,
+				FA5039C22B730F4500212C91 /* Question.swift */,
 			);
 			path = "Murphy-Icebreaker-S24";
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA5039C32B730F4500212C91 /* Question.swift in Sources */,
 				FA3DBA422B688BD900449514 /* ContentView.swift in Sources */,
 				FA3DBA402B688BD900449514 /* Murphy_Icebreaker_S24App.swift in Sources */,
 			);

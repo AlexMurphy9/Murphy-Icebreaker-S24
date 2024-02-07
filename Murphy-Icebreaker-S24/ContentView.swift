@@ -24,6 +24,8 @@ struct ContentView: View {
             
             TextField("First Name",
                       text: $txtFirstName)
+//            .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/) // Terrible way to make a border
+            
             TextField("Last Name",
                       text: $txtLastName)
             TextField("Preferred Name",
