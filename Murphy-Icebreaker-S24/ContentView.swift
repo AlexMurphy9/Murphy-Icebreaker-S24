@@ -8,14 +8,61 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var txtFirstName: String = ""
+    @State var txtLastName: String = ""
+    @State var txtPrefName: String = ""
+    @State var txtAnswer: String = ""
+    @State var txtQuestion: String = "Test Question"
+    
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Text("Icebreaker")
+                .font(.system(size: 40))
+                .bold()
+            Text("Built with SwuitUI")
+            
+            TextField("First Name",
+                      text: $txtFirstName)
+            TextField("Last Name",
+                      text: $txtLastName)
+            TextField("Preferred Name",
+                      text: $txtPrefName)
+            Button(action: {
+                setRandomQuestion() // TODO: Write
+            }, label: {
+                Text("Get a new random question")
+                    .font(.system(size: 20))
+            })
+            
+            TextField("Answer",
+                      text: $txtAnswer)
+            
+            Button(action: {
+                writeStudentToFirebase()
+            }, label: {
+                Text("Submit")
+                    .font(.system(size: 20))
+            })
         }
+        .font(.largeTitle)
         .padding()
+        .multilineTextAlignment(.center) // Horizontal centering
+        .autocorrectionDisabled() // Argument not required
+    }
+    
+    func setRandomQuestion() { // no need to write void
+        // print() shows in the previews debug window by
+        // dragging the bottom right icon upwards
+        print(txtFirstName)
+    }
+                   
+    func writeStudentToFirebase() {
+        print("Submit button pressed")
+        print("First Name \(txtFirstName)")
+        print("Last Name \(txtLastName)")
+        print("Preferred Name \(txtPrefName)")
+        print("Answer \(txtAnswer)")
     }
 }
 
